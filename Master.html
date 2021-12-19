@@ -2,13 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="Master.css" />
-    <title>First Collabration</title>
-    <script src="Master.js" type="" ></script>
+    <title>Expense Calculator</title>
+    <script src="Master.js" type=""></script>
   </head>
+
   <body>
-    <p id="par1">This is my first pragraph</p>
-    <h1 id="head1">This is my first heading</h1>
-    <div id="div1">This is my first div</div>
+    <div>
+      <button onclick="submit()">Submit</button>
+      <input type="number" id="amount" />
+      <input type="text" id="title" />
+      <select id="plus-minus">
+        <option>+</option>
+        <option>-</option>
+      </select>
+    </div>
+    <hr />
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>Amount</th>
+            <th>Title</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="expense-table-body">
+          <tr>
+            <td>Amount</td>
+            <td>Title</td>
+            <td>Action</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
